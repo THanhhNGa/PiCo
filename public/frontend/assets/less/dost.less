@@ -1,0 +1,53 @@
+.project-progress-carousel .owl-dots {
+	counter-reset: slides-num; /* Initialize counter. */ 
+    position: absolute;
+    top: 100%;
+    left: 48%; 
+    display: inline-block; 
+    
+    text-align:center;
+    margin-top: -25px;
+
+		&:after {
+			content: counter(slides-num); /* get total number of items - more info on http://www.sitepoint.com/a-little-known-way-to-replace-some-scripts-with-css-counters/ */ 
+			display: inline-block;
+			font-size: 16px;
+      		padding-left: 20px;
+		}
+		
+	}
+
+	.project-progress-carousel  .owl-dot {
+    display: inline-block;
+		counter-increment: slides-num; /* Increment counter */
+   		 
+
+		span {
+			display: none!important;
+		}
+
+		&.active {
+
+			&:before {
+				content:  counter(slides-num) " /" ; /* Use the same counter to get current item. */
+				display: inline-block;
+				vertical-align: middle;
+        font-size: 16px;
+        position: absolute;
+        
+        top: 0;
+			}
+		}
+	}
+.project-progress-carousel .owl-nav{
+	.owl-dot{
+	outline:none !important;
+	padding: 0px 10px !important;
+	border:1px solid #ccc !important;
+    font-size: 20px;
+	span{
+
+	}
+
+	}
+}
