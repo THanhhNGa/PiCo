@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bffbad71b1d28aec2131be4eddc092a",
+    "content-hash": "d33cb2c3096bfb45cbfa024adab29856",
     "packages": [
         {
             "name": "cartalyst/sentinel",

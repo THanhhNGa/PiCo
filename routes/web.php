@@ -140,7 +140,9 @@ Route::get('checkout','frontend\HomeController@Checkout');
 Route::get('register','frontend\HomeController@Register');
 Route::get('checklog','frontend\HomeController@CheckLog');
 Route::get('cart','frontend\HomeController@Cart');
+//reset pass
 Route::get('reset_pass','frontend\HomeController@reset_pass')->name('reset_pass');
 Route::post('reset_pass','frontend\HomeController@sendCodeResetPass')->name('reset_pass');
+Route::post('reset_pass','frontend\HomeController@getResetPass')->name('reset_pass');
 
 
